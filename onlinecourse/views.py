@@ -91,6 +91,6 @@ class EnrollView(View):
 #            raise Http404("No course matches the given id.")
 
 # Note that CourseDetailsView is now subclassing DetailView
-class CourseDetailsView(generic.ListView):
+class CourseDetailsView(generic.DetailsView):
     model = Course
     template_name = 'onlinecourse/course_detail.html'
